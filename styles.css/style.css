@@ -17,25 +17,31 @@ html {
     scroll-snap-type: y mandatory;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
-    font-size: 16px;  /* 1rem = 10px */ 
+body {
+    font-size: 16px;
+    /* 1rem = 10px */
     font-family: 'Source Serif Pro', serif;
-    background-image: linear-gradient(to top, #C7C7C7 0%, white 100% );
+    background-image: linear-gradient(to top, #C7C7C7 0%, white 100%);
 }
 
-h1{
+h1 {
     font-size: 3.8rem;
 }
-h2{
+
+h2 {
     font-size: 2.8rem;
 }
-h3{
+
+h3 {
     font-size: 1.8rem;
 }
+
 /* Utilizar los dos codigos anteriores en todos proyectos para que se vea bien en todos los navegadores y dispositivos */
 
 
@@ -49,7 +55,8 @@ h3{
 .tit-foto header {
     background-image: url(../img/titulo.jpg);
     padding: 4.5rem;
-    image-resolution: auto;}
+    image-resolution: auto;
+}
 
 .tresdmood a {
     color: transparent;
@@ -65,9 +72,9 @@ h3{
 }
 
 .sombra {
-    -webkit-box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
-    -moz-box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
-    box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
+    -webkit-box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
+    -moz-box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
+    box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -79,38 +86,41 @@ p {
 }
 
 .contenedor {
-  max-width: auto;
-  margin: 0 auto;
-  text-align: center;
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .cont2 {
     max-width: 120rem;
-  margin: 2rem;
-  text-align: center;
+    margin: auto;
+    text-align: center;
 }
 
 
 @media (min-width: 768px) {
     .servicios {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /*1fr = 1 fracción*/
-        column-gap: 1rem; /*separacion entre columnas*/        
-    }     
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3rem;
+        /*1fr = 1 fracción*/
+        column-gap: auto;
+        /*separacion entre columnas*/
+    }
 }
 
 .boton {
-background-color: var(--turquesa);
-color: black;
-padding: 1rem 3rem;
-text-decoration: none;
-text-transform: uppercase;
-font-weight: 700;
-border-radius: .5rem;
-width: 90%;
-text-align: center;
-border: none;
-margin-top: 3rem;
+    background-color: var(--turquesa);
+    color: black;
+    padding: 1rem 3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    margin-top: 3rem;
 }
 
 .boton:hover {
@@ -122,6 +132,7 @@ margin-top: 3rem;
         width: auto;
     }
 }
+
 .nav-bg {
     background-color: var(--turquesa)
 }
@@ -137,17 +148,17 @@ margin-top: 3rem;
 }
 
 @media (min-width: 480px) {
-    .navegacion-principal{
+    .navegacion-principal {
         flex-direction: row;
         justify-content: space-evenly;
     }
-     }
+}
 
 @media (min-width: 768px) {
-    .navegacion-principal{
+    .navegacion-principal {
         flex-direction: row;
     }
-     }
+}
 
 
 .navegacion-principal a {
@@ -155,10 +166,11 @@ margin-top: 3rem;
     text-align: center;
     padding: 1rem;
     color: black;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
 }
+
 .navegacion-principal a:hover {
     background-color: black;
     color: white;
@@ -182,28 +194,28 @@ margin-top: 3rem;
 }
 
 .tresdmood {
-background-color: #C7C7C7;
-background-image: linear-gradient(to bottom, #C7C7C7 0%, white 100% );
-background-repeat: no-repeat;
-background-size: cover;
-background-position: top;
-height: 50px;
-position: relative;
-padding-bottom: 7rem;
-display: flex;
-flex-direction: column;
-align-items: center;
+    background-color: #C7C7C7;
+    background-image: linear-gradient(to bottom, #C7C7C7 0%, white 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 50px;
+    position: relative;
+    padding-bottom: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contenido-bola {
     position: relative;
     background-color: rgb(0 0 0 / 40%);
-   width: 100%;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contenido-bola h2,
@@ -243,7 +255,8 @@ align-items: center;
 
 .formulario {
     background-color: var(--gris);
-    width: min(60rem, 100%); /*utlizar el valor mas pequeño*/
+    width: min(60rem, 100%);
+    /*utlizar el valor mas pequeño*/
     margin: 0 auto;
     padding: 2rem;
     border-radius: 2rem;
@@ -271,7 +284,7 @@ align-items: center;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto, auto, 20rem;
         column-gap: 1rem;
-        } 
+    }
 }
 
 .campo:nth-child(3),
@@ -299,7 +312,7 @@ align-items: center;
 }
 
 .footer {
-text-align: center;
+    text-align: center;
 }
 
 .campo textarea {
@@ -323,9 +336,9 @@ text-align: center;
 }
 
 .sombra2 {
-    -webkit-box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
-    -moz-box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
-    box-shadow: 0px 0px 20px -9px rgba(28,184,171,0.69);
+    -webkit-box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
+    -moz-box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
+    box-shadow: 0px 0px 20px -9px rgba(28, 184, 171, 0.69);
     background-color: white;
     border-radius: 1rem;
     padding: 1rem;
@@ -334,8 +347,8 @@ text-align: center;
 .contenedor2 .foto-dcfs {
     max-width: 120rem;
     margin: 0 auto;
-  
-  }
+
+}
 
 .foto-spoty {
     display: flex;
@@ -369,9 +382,11 @@ text-align: center;
 @media (min-width: 768px) {
     .foto-spoty2 {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr; /*1fr = 1 fracción*/
-        column-gap: 1rem; /*separacion entre columnas*/       
-    }     
+        grid-template-columns: 1fr 1fr 1fr;
+        /*1fr = 1 fracción*/
+        column-gap: 1rem;
+        /*separacion entre columnas*/
+    }
 }
 
 .foto-dcfs {
@@ -424,6 +439,6 @@ text-align: center;
 
 @media (min-width: 768px) {
     .carrusel {
-       max-width: 60rem;      
-    }     
+        max-width: 60rem;
+    }
 }
